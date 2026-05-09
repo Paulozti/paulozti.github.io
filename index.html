@@ -2,77 +2,288 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shivary Game Studio — Criando experiências únicas no mundo dos games." />
     <title>Shivary Game Studio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <img src="assets/logo-shivary.png" alt="Logo Shivary" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#jogos">Jogos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- ═══════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <!-- Substitua pelo caminho do seu logo real -->
+                <img src="assets/logo.png" alt="Shivary Game Studio Logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                <span class="logo-text" style="display:none;">SHIVARY</span>
+            </a>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Criando mundos e experiências únicas.</h1>
-            <p>Conheça as criações do Shivary Game Studio.</p>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#games" class="nav-link">Jogos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════
+       HERO
+  ═══════════════════════════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="hero-glow"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-logo-wrapper">
+                <img src="assets/logo-shivary.png" alt="Shivary Game Studio" class="hero-logo"
+                    onerror="this.style.display='none';" />
+            </div>
+            <p class="hero-tagline">Forjando mundos. Contando histórias.</p>
+            <p class="hero-sub">Estúdio independente dedicado a criar experiências únicas que ficam na memória.</p>
+            <div class="hero-cta">
+                <a href="#games" class="btn btn-primary">Ver Jogos</a>
+                <a href="#contact" class="btn btn-outline">Fale Conosco</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <section id="jogos" class="jogos">
+    <!-- ═══════════════════════════════════
+       SOBRE
+  ═══════════════════════════════════ -->
+    <section class="section about" id="about">
         <div class="container">
-            <h2>Nossos Jogos na Steam</h2>
-            <div class="jogos-grid">
+            <div class="section-header">
+                <span class="section-label">Quem somos</span>
+                <h2 class="section-title">Shivary Game Studio</h2>
+                <div class="title-line"></div>
+            </div>
 
-                <a href="https://store.steampowered.com/app/3582540/Foxxel_Quest__A_Puzzle_Adventure/?beta=0"
-                    target="_blank" class="jogo-card">
-                    <img src="assets/capa-foxxel-quest.png" alt="Capa foxxel Quest">
-                    <div class="jogo-info">
-                        <h3>Foxxel Quest - A Puzzle Adventure</h3>
-                        <span class="status lançado">Já Lançado</span>
-                    </div>
-                </a>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        O <strong>Shivary Game Studio</strong> é um estúdio de desenvolvimento de jogos
+                        independente focado em criar experiências envolventes e memoráveis. Acreditamos
+                        que jogos são uma forma de arte poderosa, capaz de transportar jogadores para
+                        mundos completamente novos.
+                    </p>
+                    <p>
+                        Nossa equipe apaixonada trabalha para entregar jogos com narrativas ricas,
+                        mecânicas inovadoras e visuais marcantes — sempre ouvindo e valorizando
+                        a comunidade de jogadores.
+                    </p>
+                </div>
 
-                <a href="https://store.steampowered.com/app/4633190/Spiretela/?beta=0" target="_blank"
-                    class="jogo-card">
-                    <img src="assets/capa-spiretela.jpg" alt="Capa Spiretela">
-                    <div class="jogo-info">
-                        <h3>Spiretela</h3>
-                        <span class="status em-breve">Em Breve</span>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Jogos</span>
                     </div>
-                </a>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Indie</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Paixão</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+       JOGOS
+  ═══════════════════════════════════ -->
+    <section class="section games" id="games">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossos títulos</span>
+                <h2 class="section-title">Jogos</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="games-grid">
+
+                <!-- Card: Spiretela (EM BREVE) -->
+                <div class="game-card featured">
+                    <div class="game-badge">Em Breve</div>
+                    <div class="game-cover spiretela-cover">
+                        <div class="game-cover-overlay"></div>
+                        <div class="game-cover-icon">
+                            <i class="fas fa-spider"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Spiretela</h3>
+                        <p class="game-genre"><i class="fas fa-tag"></i> Em desenvolvimento</p>
+                        <p class="game-desc">
+                            Uma nova aventura chega em breve. O próximo capítulo do Shivary Game Studio
+                            está a caminho — misterioso, imersivo e cheio de surpresas. Fique de olho
+                            na página da Steam para não perder o lançamento.
+                        </p>
+                        <div class="game-actions">
+                            <!-- Substitua o href pela URL real da página na Steam -->
+                            <a href="https://store.steampowered.com/app/4633190/Spiretela/" target="_blank"
+                                rel="noopener" class="btn btn-steam">
+                                <i class="fab fa-steam"></i> Ver na Steam
+                            </a>
+                            <span class="wishlist-hint">
+                                <i class="fas fa-heart"></i> Adicione à lista de desejos!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Foxxel Quest -->
+                <div class="game-card">
+                    <div class="game-badge published">Publicado</div>
+                    <div class="game-cover foxxel-cover">
+                        <div class="game-cover-overlay"></div>
+                        <div class="game-cover-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title">Foxxel Quest</h3>
+                        <p class="game-genre"><i class="fas fa-tag"></i> Aventura</p>
+                        <p class="game-desc">
+                            O título estreia do Shivary Game Studio. Uma jornada cheia de desafios,
+                            descobertas e personagens únicos que marcaram o início da nossa história
+                            como estúdio.
+                        </p>
+                        <div class="game-actions">
+                            <a href="#" class="btn btn-outline-small">
+                                <i class="fas fa-info-circle"></i> Saiba Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <section id="contato" class="contato">
+    <!-- ═══════════════════════════════════
+       CONTATO
+  ═══════════════════════════════════ -->
+    <section class="section contact" id="contact">
         <div class="container">
-            <h2>Contato & Imprensa</h2>
-            <p>Para dúvidas, parcerias ou solicitações de chaves de imprensa, entre em contato:</p>
-            <a href="mailto:contato@shivarygamestudio.com" class="email-link">contato@shivarygamestudio.com</a>
+            <div class="section-header">
+                <span class="section-label">Fale com a gente</span>
+                <h2 class="section-title">Contato</h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        Tem uma dúvida, sugestão ou quer colaborar com o estúdio?
+                        Entre em contato — adoramos ouvir a comunidade!
+                    </p>
+
+                    <a href="mailto:contact@shivarygamestudio.com" class="contact-email">
+                        <i class="fas fa-envelope"></i>
+                        contact@shivarygamestudio.com
+                    </a>
+
+                    <div class="contact-socials">
+                        <!-- Adicione links reais quando disponíveis -->
+                        <a href="#" class="social-btn" aria-label="Twitter/X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Steam">
+                            <i class="fab fa-steam"></i>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Sua mensagem..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                    <p class="form-note">
+                        * O formulário irá abrir seu cliente de e-mail padrão.<br />
+                        Ou envie diretamente para <a
+                            href="mailto:contact@shivarygamestudio.com">contact@shivarygamestudio.com</a>
+                    </p>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Shivary Game Studio. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo-shivary.png" alt="Shivary" class="footer-logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                    <span class="footer-logo-text" style="display:none;">SHIVARY</span>
+                    <p>Forjando mundos. Contando histórias.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#games">Jogos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shivary Game Studio. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
