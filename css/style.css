@@ -672,24 +672,6 @@ ul {
     background: linear-gradient(135deg, #0a1a0a 0%, #0d2b0d 40%, #1a4a1a 70%, #0a0f0a 100%);
 }
 
-.game-cover-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
-}
-
-.game-cover-icon {
-    position: relative;
-    z-index: 2;
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.06);
-}
-
-.spiretela-cover .game-cover-icon {
-    color: rgba(157, 92, 246, 0.15);
-    font-size: 5rem;
-    text-shadow: 0 0 60px rgba(157, 92, 246, 0.3);
-}
 
 .game-info {
     padding: 1.8rem;
